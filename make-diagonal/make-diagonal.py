@@ -9,11 +9,7 @@ def make_diagonal(v):
     n = v.shape[0]
     p = np.zeros((n,n))
     for i in range(n):
-        for j in range(n):
-            if i==j:
-                p[i,j] = v[i]
-            else:
-                p[i,j] = 0
+        p[i,i] = v[i]
 
     return p
     
